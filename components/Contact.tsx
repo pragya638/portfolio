@@ -32,9 +32,9 @@ const socialLinks = [
   },
   {
     label: 'Email',
-    href: 'mailto:pragya.dwivedi.dev@gmail.com',
+    href: 'mailto:pragyadwivedi415@gmail.com',
     color: '#FF6A00',
-    display: 'pragya.dwivedi.dev@gmail.com',
+    display: 'pragyadwivedi415@gmail.com',
     icon: <Mail size={18} />,
   },
 ];
