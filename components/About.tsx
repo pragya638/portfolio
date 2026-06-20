@@ -40,7 +40,7 @@ const techStack = [
   { name: 'JPA', color: '#FF6A00' },
   { name: 'Hibernate', color: '#FF6A00' },
   { name: 'MySQL', color: '#00BFFF' },
-  { name: 'DSA', color: '#888' },
+  { name: 'DSA', color: '#818CF8' },
 ];
 
 export default function About() {
@@ -50,7 +50,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative py-24 sm:py-32 bg-[#0A0A0A] px-6 md:px-12 lg:px-24 z-20"
+      className="relative py-24 sm:py-32 bg-[#0B1220] px-6 md:px-12 lg:px-24 z-20"
     >
       <div ref={ref} className="max-w-6xl mx-auto w-full">
         <motion.div
@@ -71,7 +71,6 @@ export default function About() {
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
-          {/* Right: Content */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -82,38 +81,37 @@ export default function About() {
               <h3 className="text-lg font-semibold text-white font-display">
                 Backend Developer & CS Undergraduate
               </h3>
-              <p className="text-[11px] text-[#444] font-mono mt-1">
+              <p className="text-[11px] text-[#475569] font-mono mt-1">
                 Ghaziabad, Uttar Pradesh
               </p>
             </div>
 
             <div className="mt-5 space-y-3">
-              <p className="text-[#999] text-[14px] leading-relaxed">
+              <p className="text-[#94A3B8] text-[14px] leading-relaxed">
                 I&apos;m a backend-focused developer who enjoys solving real problems through code.
                 I care about building systems that are reliable, well-structured, and easy to maintain.
               </p>
-              <p className="text-[#777] text-[14px] leading-relaxed">
+              <p className="text-[#64748B] text-[14px] leading-relaxed">
                 My core stack is Java and Spring Boot. I work with REST APIs,
                 JPA/Hibernate, MySQL, and PostgreSQL on a regular basis. I&apos;ve also worked with
                 Spring Security, JWT authentication, Docker, and Swagger/OpenAPI for production-ready systems.
               </p>
-              <p className="text-[#777] text-[14px] leading-relaxed">
+              <p className="text-[#64748B] text-[14px] leading-relaxed">
                 Beyond projects, I stay grounded in fundamentals — Data Structures &amp; Algorithms,
                 DBMS, Operating Systems, and Computer Networks. I believe strong CS fundamentals
                 make the difference between writing code and engineering software.
               </p>
-              <p className="text-[#666] text-[14px] leading-relaxed">
+              <p className="text-[#475569] text-[14px] leading-relaxed">
                 Currently looking for backend development internships where I can contribute to
                 meaningful projects and grow as an engineer.
               </p>
             </div>
 
-            {/* Tech tags */}
             <div className="flex flex-wrap gap-1.5 mt-6">
               {techStack.map((tech) => (
                 <span
                   key={tech.name}
-                  className="cursor-default px-2.5 py-1 text-[11px] font-mono rounded-md border border-white/[0.04] bg-white/[0.015] transition-all duration-200 hover:border-white/[0.08]"
+                  className="cursor-default px-2.5 py-1 text-[11px] font-mono rounded-md border border-white/[0.06] bg-white/[0.02] transition-all duration-200 hover:border-white/[0.12]"
                   style={{ color: tech.color }}
                 >
                   {tech.name}
@@ -121,23 +119,22 @@ export default function About() {
               ))}
             </div>
 
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 mt-8 pt-6 border-t border-white/[0.04]">
+            <div className="grid grid-cols-3 gap-6 mt-8 pt-6 border-t border-white/[0.06]">
               <div>
                 <AnimatedCounter target={200} suffix="+" />
-                <p className="text-[11px] text-[#444] font-mono mt-1">
+                <p className="text-[11px] text-[#475569] font-mono mt-1">
                   DSA Problems Solved
                 </p>
               </div>
               <div>
                 <AnimatedCounter target={4} suffix="+" />
-                <p className="text-[11px] text-[#444] font-mono mt-1">
+                <p className="text-[11px] text-[#475569] font-mono mt-1">
                   Technical Projects
                 </p>
               </div>
               <div>
                 <AnimatedCounter target={7} suffix="+" />
-                <p className="text-[11px] text-[#444] font-mono mt-1">
+                <p className="text-[11px] text-[#475569] font-mono mt-1">
                   Technologies Used
                 </p>
               </div>

@@ -16,7 +16,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Pragya Dwivedi | Software Engineering Student",
+  title: "Pragya Dwivedi | Backend Developer & Software Engineer",
   description:
     "Portfolio of Pragya Dwivedi. B.Tech CSE student at RKGIT focused on Java, Spring Boot, backend development, and software engineering.",
   keywords: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Pragya Dwivedi" }],
   openGraph: {
-    title: "Pragya Dwivedi | Software Engineering Student",
+    title: "Pragya Dwivedi | Backend Developer & Software Engineer",
     description:
       "Portfolio of Pragya Dwivedi. B.Tech CSE student at RKGIT focused on Java, Spring Boot, backend development, and software engineering.",
     url: "https://pragya638.github.io",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pragya Dwivedi | Software Engineering Student",
+    title: "Pragya Dwivedi | Backend Developer & Software Engineer",
     description:
       "Portfolio of Pragya Dwivedi. B.Tech CSE student at RKGIT focused on Java, Spring Boot, backend development, and software engineering.",
   },
@@ -57,7 +57,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${inter.variable} ${spaceGrotesk.variable} antialiased bg-[#0A0A0A]`}
+        className={`${inter.variable} ${spaceGrotesk.variable} antialiased bg-[#0B1220]`}
       >
         <CustomCursor />
         {children}

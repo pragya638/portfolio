@@ -2,7 +2,10 @@ import dynamic from 'next/dynamic';
 import About from '@/components/About';
 import Skills from '@/components/Skills';
 import Projects from '@/components/Projects';
-import Journey from '@/components/Timeline';
+import Education from '@/components/Education';
+import WhyHireMe from '@/components/WhyHireMe';
+import Achievements from '@/components/Achievements';
+import Certifications from '@/components/Certifications';
 import Contact from '@/components/Contact';
 
 const ScrollyCanvas = dynamic(() => import('@/components/ScrollyCanvas'), {
@@ -15,7 +18,7 @@ const Navigation = dynamic(() => import('@/components/Navigation'), {
 
 export default function Home() {
   return (
-    <main className="relative w-full bg-[#0A0A0A] overflow-x-hidden min-h-screen">
+    <main className="relative w-full bg-[#0B1220] overflow-x-hidden min-h-screen">
       <Navigation />
       <div className="noise-overlay" />
 
@@ -23,7 +26,10 @@ export default function Home() {
       <About />
       <Skills />
       <Projects />
-      <Journey />
+      <Education />
+      <WhyHireMe />
+      <Achievements />
+      <Certifications />
       <Contact />
     </main>
   );

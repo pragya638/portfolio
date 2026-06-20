@@ -7,7 +7,8 @@ const navLinks = [
   { label: 'About', href: '#about' },
   { label: 'Skills', href: '#skills' },
   { label: 'Projects', href: '#projects' },
-  { label: 'Journey', href: '#journey' },
+  { label: 'Education', href: '#education' },
+  { label: 'Achievements', href: '#achievements' },
   { label: 'Contact', href: '#contact' },
 ];
 
@@ -43,22 +44,20 @@ export default function Navigation() {
         transition={{ duration: 0.5, delay: 0.05 }}
         className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 ${
           scrolled
-            ? 'bg-[#0A0A0A]/85 backdrop-blur-xl border-b border-white/[0.04]'
+            ? 'bg-[#0B1220]/85 backdrop-blur-xl border-b border-white/[0.06]'
             : 'bg-transparent'
         }`}
       >
         <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-24 flex items-center justify-between h-12 md:h-14">
-          {/* Logo: PD badge + full name */}
           <a href="#" aria-label="Go to top" className="flex items-center gap-2.5 group cursor-pointer">
-            <div className="w-7 h-7 rounded-full bg-gradient-to-br from-[#00BFFF] to-[#FF6A00] flex items-center justify-center flex-shrink-0">
-              <span className="text-[10px] font-bold text-black tracking-tight">PD</span>
+            <div className="w-7 h-7 rounded-full bg-gradient-to-br from-[#00BFFF] to-[#818CF8] flex items-center justify-center flex-shrink-0">
+              <span className="text-[10px] font-bold text-white tracking-tight">PD</span>
             </div>
             <span className="text-white/80 font-semibold font-display text-[13px] tracking-wide hidden sm:block">
               Pragya Dwivedi
             </span>
           </a>
 
-          {/* Desktop */}
           <div className="hidden md:flex items-center gap-0.5">
             {navLinks.map((link) => (
               <a
@@ -68,7 +67,7 @@ export default function Navigation() {
                 className={`relative px-3 py-1.5 text-[11px] uppercase tracking-[0.12em] font-mono transition-colors duration-200 cursor-pointer ${
                   activeSection === link.href.replace('#', '')
                     ? 'text-[#00BFFF]'
-                    : 'text-[#444] hover:text-[#888]'
+                    : 'text-[#64748B] hover:text-[#94A3B8]'
                 }`}
               >
                 {link.label}
@@ -83,7 +82,6 @@ export default function Navigation() {
             ))}
           </div>
 
-          {/* Mobile */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
             className="md:hidden flex flex-col gap-[3px] p-2 cursor-pointer"
@@ -105,7 +103,6 @@ export default function Navigation() {
         </div>
       </motion.nav>
 
-      {/* Mobile overlay */}
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
@@ -113,7 +110,7 @@ export default function Navigation() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.15 }}
-            className="fixed inset-0 z-[99] bg-[#0A0A0A]/97 backdrop-blur-2xl flex flex-col items-center justify-center gap-5"
+            className="fixed inset-0 z-[99] bg-[#0B1220]/97 backdrop-blur-2xl flex flex-col items-center justify-center gap-5"
           >
             {navLinks.map((link, i) => (
               <motion.a
